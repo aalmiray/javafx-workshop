@@ -14,6 +14,18 @@
         <name>Canoo Engineering A.G.</name>
     </organization>
 
+    <properties>
+       <javafx.main.classname>lesson1.HelloWorld</javafx.main.classname>
+    </properties>
+
+    <dependencies/>
+
+    <!--
+      ==
+      ==  DO NOT EDIT BEYOND THIS POINT
+      ==
+    -->
+
     <build>
         <plugins>
 
@@ -22,9 +34,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>2.0-SNAPSHOT</version>
                 <configuration>
-
-                    <mainClass>lesson1.HelloWorld</mainClass>
-
+                    <mainClass>${javafx.main.classname}</mainClass>
                     <!-- only required if signing the jar file -->
                     <keyStoreAlias>example-user</keyStoreAlias>
                     <keyStorePassword>example-password</keyStorePassword>
@@ -37,8 +47,6 @@
 
         </plugins>
     </build>
-
-    <dependencies/>
 
     <pluginRepositories>
         <pluginRepository>
