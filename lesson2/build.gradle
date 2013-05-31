@@ -1,0 +1,5 @@
+apply from: '../common/setup.gradle'
+
+javafx {
+    mainClass 'lesson2.Lesson2Main'
+}
