@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.canoo.javafx.workshop</groupId>
-    <artifactId>lesson3</artifactId>
-    <name>lesson3</name>
+    <artifactId>lesson4</artifactId>
+    <name>lesson4</name>
 
     <packaging>jar</packaging>
     <version>1.0.0</version>
@@ -15,7 +15,7 @@
     </organization>
 
     <properties>
-       <javafx.main.classname>lesson3.BindingMain</javafx.main.classname>
+       <javafx.main.classname>lesson4.LayoutMain</javafx.main.classname>
     </properties>
 
     <dependencies/>
