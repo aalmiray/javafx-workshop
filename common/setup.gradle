@@ -26,3 +26,8 @@ javafx {
         }
     }
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.6'
+    jarFile = 'gradle/wrapper/gradle-wrapper.jar'
+}
