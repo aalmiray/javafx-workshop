@@ -176,6 +176,5 @@ public class CanvasMain extends Application {
             life          = 1;
             remainingLife = life;
         }
-
     }
 }
