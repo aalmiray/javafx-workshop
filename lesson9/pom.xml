@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.canoo.javafx.workshop</groupId>
+    <artifactId>lesson9</artifactId>
+    <name>lesson9</name>
+
+    <packaging>jar</packaging>
+    <version>1.0.0</version>
+    
+    <organization>
+        <name>Canoo Engineering A.G.</name>
+    </organization>
+
+    <properties>
+       <javafx.main.classname>lesson9.BrowserMain</javafx.main.classname>
+    </properties>
+
+    <dependencies/>
+
+    <!--
+      ==
+      ==  DO NOT EDIT BEYOND THIS POINT
+      ==
+    -->
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>com.zenjava</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>2.0-SNAPSHOT</version>
+                <configuration>
+                    <mainClass>${javafx.main.classname}</mainClass>
+                    <!-- only required if signing the jar file -->
+                    <keyStoreAlias>example-user</keyStoreAlias>
+                    <keyStorePassword>example-password</keyStorePassword>
+                    <permissions>
+                        <permission>all-permissions</permission>
+                    </permissions>
+
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>sonatype.snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <updatePolicy>daily</updatePolicy>
+            </releases>
+            <snapshots>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
